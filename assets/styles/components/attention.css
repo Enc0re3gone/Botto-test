@@ -1,0 +1,46 @@
+.attention {
+	position: relative;
+	max-height: 0;
+	display: flex;
+	border-radius: var(--border-radius);
+	background: var(--primary-color-light);
+	transition: max-height var(--anim-medium), margin-top var(--anim-fast) .5s;
+	overflow: hidden;
+}
+
+.attention.show {
+	max-height: 260px;
+	transition: max-height var(--anim-medium), margin-top var(--anim-fast);
+}
+
+.attention__icon-info > svg {
+	margin-top: 18px;
+	margin-left: 18px;
+	color: var(--primary-color);
+}
+.attention__icon-close > svg {
+	cursor: pointer;
+	margin-top: 10px;
+	margin-right: 10px;
+	color: var(--gray);
+}
+
+.attention__body {margin: 25px 14px 18px;}
+.attention__body-more {position: relative;}
+.attention__body-more input {position: absolute;top: 0;left: 0;width: 0;height: 0;opacity: 0;}
+
+.attention__body-more label > h4 {
+	color: var(--gray);
+	margin-top: 20px;
+	text-decoration: underline;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.attention__body-more label > p {
+	margin-top: 5px;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height var(--anim-fast);
+}
+.attention__body-more input:checked + label > p {max-height: 150px;}

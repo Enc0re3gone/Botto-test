@@ -1,0 +1,13 @@
+:root {
+	--primary-color: #24ADED;
+	--primary-color-light: #d0edfb;
+	--gray-lighten: #FAFAFA;
+	--gray-light: #d5d5d5;
+	/*lighten*/
+	--gray: #878787;
+	--primary-font-color: #15203D;
+	--border-radius: 6px;
+	--shadow: 0px 0px 10px #E2E4F0;
+	--anim-fast: .3s ease;
+	--anim-medium: .5s ease;
+}

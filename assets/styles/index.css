@@ -1,0 +1,123 @@
+/*
+
+*/
+@import "font.css";
+@import "media.css";
+@import "variables.css";
+@import "components/index.css";
+*, :after, :before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+body {
+	color: var(--primary-font-color);
+	box-sizing: border-box;
+	font-size: 14px;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* данный блок требуется для избавления схлапывания margin'ов */
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#calculator {background: var(--gray-lighten);}
+
+.calculator__wrap {
+	margin: 30px 30px;
+	padding: 50px 30px;
+	background: #fff;
+	display: flex;
+	box-shadow: var(--shadow);
+	border-radius: var(--border-radius);
+}
+
+.calculator__body {width: 60%;margin-right: 20px;}
+.calculator__result {width: 40%;margin-left: 20px;}
+
+/*calculator__body*/
+
+.radio-btn__wrap {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.select-region {margin-top: 10px;}
+
+.salary-card {margin-top: 25px;}
+
+.attention__salary-card.show {margin-top: 25px;}
+
+.input-rage__cost {margin-top: 25px;}
+
+.button-popup {margin-top: 50px;}
+.button button {
+	display: flex;justify-content: center;align-items: center;
+	width: 100%;padding: 0 20px 0 25px;line-height: 50px;
+	background: var(--primary-color);border: 2px solid var(--primary-color);
+	border-radius: var(--border-radius);color: #fff;
+	transition: background-color var(--anim-fast), color var(--anim-fast);
+}
+.button.button__with-icon button {justify-content: space-between;}
+.button button > svg {transform: rotate(-90deg);}
+.button button > svg > path {stroke: #fff;transition: all var(--anim-fast);}
+.button button:hover {background: var(--primary-color-light);color: var(--primary-font-color);}
+.button button:hover > svg > path {stroke: var(--primary-font-color);}
+
+.button__outline button {
+	background: transparent;
+	color: var(--primary-font-color);
+}
+.button__outline button > svg > path {stroke: var(--primary-font-color);}
+
+.input-rage__initial {margin-top: 25px;}
+
+.capital {margin-top: 50px;}
+
+.input-rage__loan-term {margin-top: 25px;}
+
+/*calculator__result*/
+
+.calculator__result-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.calculator__result-wrap {
+	position: sticky;
+	top: 15px;
+}
+
+.calculator__result-item {
+	width: 48%;
+	margin-bottom: 35px;
+}
+
+.calculator__result-item > h4 {
+	color: var(--gray);
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.calculator__result-item > span {color: var(--primary-font-color);font-size: 18px;}
+
+.calculator__result-item-big > span {font-size: 24px;}
+.calculator__result-item:nth-child(2) > span {color: var(--primary-color);}
+
+.button-application {margin-top: 10px;}

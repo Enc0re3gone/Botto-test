@@ -1,0 +1,23 @@
+.radio-btn {position: relative;display: inline-block;margin-bottom: 10px;margin-right: 10px;}
+.radio-btn input {position: absolute;top: 0;left: 0;height: 0;width: 0;opacity: 0;}
+
+.radio-btn label {
+	display: inline-block;
+	line-height: 40px;
+	border: 2px solid var(--gray-light);
+	padding: 0 20px;
+	border-radius: var(--border-radius);
+	font-size: 16px;
+	transition: background var(--anim-fast), color var(--anim-fast), border-color var(--anim-fast);
+}
+
+.radio-btn label:hover {background: var(--primary-color-light);}
+
+.radio-btn label>em {
+	font-style: normal;
+	color: var(--primary-color);
+	transition: color var(--anim-fast);
+}
+
+.radio-btn input:checked + label {color: #fff;background: var(--primary-color);border-color: var(--primary-color);}
+.radio-btn input:checked + label>em {color: #fff;}

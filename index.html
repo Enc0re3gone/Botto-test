@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Botto test work</title>
+  <link rel="stylesheet" href="assets/styles/index.css" />
+</head>
+<body>
+  <main>
+    <section id="calculator">
+      <div class="container">
+        <div class="calculator__wrap">
+          <div class="calculator__body">
+            <div class="select select-target">
+              <label for="select-target"><small>Цель кредита</small></label>
+              <select name="target" id="select-target">
+                <option value="appart">Квартира</option>
+                <option value="house">Дом</option>
+              </select>
+              <svg class="chevron-down" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5758 1.09082L7.24251 6.42416L1.90918 1.09082" stroke="black" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <ul class="radio-btn__wrap">
+              <li class="radio-btn">
+                <input type="radio" name="tariff" value="base" id="radio-btn_base" checked>
+                <label for="radio-btn_base">Базовая ипотека <em>от 18,6%</em></label>
+              </li>
+
+              <li class="radio-btn">
+                <input type="radio" name="tariff" value="eastern" id="radio-btn_eastern">
+                <label for="radio-btn_eastern">Дальневосточная ипотека <em>от 0,1%</em></label>
+              </li>
+
+              <li class="radio-btn">
+                <input type="radio" name="tariff" value="military" id="radio-btn_military">
+                <label for="radio-btn_military">Военная ипотека <em>от 17,9%</em></label>
+              </li>
+            </ul>
+
+            <div class="select select-region">
+              <label for="select-target"><small>Регион покупки недвижемости</small></label>
+              <select name="target" id="select-region">
+                <option value="msc">Москва</option>
+                <option value="spb">Санкт-Петербург</option>
+                <option value="perm">Пермь</option>
+                <option value="ekb">Екатеринбург</option>
+              </select>
+              <svg class="chevron-down" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5758 1.09082L7.24251 6.42416L1.90918 1.09082" stroke="black" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="switch salary-card">
+              <p>Есть зарплатная карта Сбербанк</p>
+              <div class="switch__box">
+                <input type="checkbox" id="salary-card">
+                <em style="order: 1">-0,5%</em>
+                <label for="salary-card" class="slider"></label>
+              </div>
+            </div>
+
+            <div class="attention attention__salary-card">
+              <div class="attention__icon-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="attention__body">
+                <p>Ставка <b>18,6%</b> доступна при сумме кредита <b>от&nbsp;12&nbsp;млн</b>&nbsp;&#8381; и первоначальном
+                  взносе <b>от&nbsp;20%</b> включительно. Для зарплатных клиентов или с поддержанием дохода</p>
+                <div class="attention__body-more">
+                  <input type="checkbox" id="attention__body-more">
+                  <label for="attention__body-more">
+                    <h4>Подробнее</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel commodo ante. Donec vel porta
+                      tellus, in luctus odio. Sed vel urna placerat dolor imperdiet mollis. Sed at nibh mauris. Donec
+                      vitae convallis risus. Nunc dignissim metus ex, molestie rhoncus nisl elementum quis. Duis id
+                      nulla interdum, pulvinar nibh ullamcorper, porttitor orci. Morbi metus libero, dapibus eget
+                      ornare et, rutrum ac est.</p>
+                  </label>
+                </div>
+              </div>
+              <div class="attention__icon-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+
+            <div class="input-rage input-rage__cost">
+              <div class="input-rage__input-wrap">
+                <small>Стоимость недвижемости</small>
+                <input type="text" id="input-cost" value="375 000" maxlength="24">
+              </div>
+              <div class="input-rage__range-wrap">
+                <input type="range" min="375000" value="375000" max="100000000" step="25000" id="range-cost">
+                <div class="input-rage__range-wrap-cost-wrap">
+                  <div class="cost-min">375 тыс.&#8381;</div>
+                  <div class="cost-max">100 млн.&#8381;</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="button-popup button__with-icon button button__outline">
+              <button>
+                <span>Включите в кредит расходы на желье</span>
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5758 1.09082L7.24251 6.42416L1.90918 1.09082" stroke="black" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="input-rage input-rage__initial">
+              <div class="input-rage__input-wrap">
+                <small>Первоначальный взнос</small>
+                <input type="text" id="input-initial" value="75 000" maxlength="24">
+              </div>
+              <div class="input-rage__range-wrap">
+                <input type="range" min="75000" value="75000" max="75000" step="25000" id="range-initial">
+                <div class="input-rage__range-wrap-cost-wrap">
+                  <div class="cost-min">75 тыс.&#8381;</div>
+                  <div class="cost-max">75 тыс.&#8381;</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="switch capital">
+              <p>Использовать материнский капитал</p>
+              <div class="switch__box">
+                <input type="checkbox" id="capital">
+                <label for="capital" class="slider"></label>
+              </div>
+            </div>
+
+            <div class="input-rage input-rage__loan-term">
+              <div class="input-rage__input-wrap">
+                <small>Срок кредита</small>
+                <input type="number" id="input-loan-term" value="1" maxlength="2">
+              </div>
+              <div class="input-rage__range-wrap">
+                <input type="range" min="1" value="1" max="30" step="1" id="range-loan-term">
+                <div class="input-rage__range-wrap-cost-wrap">
+                  <div class="cost-min">1 год</div>
+                  <div class="cost-max">30 лет</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator__result">
+            <div class="calculator__result-wrap">
+              <ul class="calculator__result-list">
+                <li class="calculator__result-item calculator__result-item-big" id="monthly-payment">
+                  <h4>Ежемесячный платеж</h4>
+                  <span>27 533 ₽</span>
+                </li>
+                <li class="calculator__result-item calculator__result-item-big" id="percentage">
+                  <h4>Процентная ставка</h4>
+                  <span>18,6%</span>
+                </li>
+                <li class="calculator__result-item" id="loan-amount">
+                  <h4>Сумма кредита</h4>
+                  <span>300 000 ₽</span>
+                </li>
+                <li class="calculator__result-item" id="tax-deduction">
+                  <h4>Налоговый вычет</h4>
+                  <span>52 700 ₽</span>
+                </li>
+                <li class="calculator__result-item" id="required-income">
+                  <h4>Необходимый доход</h4>
+                  <span>45 900 ₽</span>
+                </li>
+              </ul>
+              <div class="button button__outline">
+                <button>График платежей</button>
+              </div>
+              <div class="button button-application">
+                <button>Перейти к подаче заявки</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<script src="assets/scripts/index.js" type="module" ></script>
+</body>
+</html>
